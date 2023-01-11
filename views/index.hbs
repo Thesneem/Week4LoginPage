@@ -1,0 +1,15 @@
+{{!-- <h1>{{title}}</h1>
+<p>Welcome to {{title}}</p> --}}
+<h2>Login Form</h2>
+
+<form action="/login" method="post">
+    <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" required><br>
+        <label for="psw" class="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required><br> 
+        <div><button  type="submit">Login</button></div><br>
+        {{#if error}}
+        <div class="error">Invalid Credentials!!!</h3></div>
+        {{/if}}
+    </div>

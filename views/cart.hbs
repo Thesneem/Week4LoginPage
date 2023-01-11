@@ -1,0 +1,14 @@
+<div class="row" style="height: 100vh;">
+    {{#each products}}
+<div class="card" style="width: 15rem; height: 35rem; text-align:center; margin-left:90px; rgb(14, 12, 12); margin-top:30px">
+  <img class="card-img-top" src="{{this.Image}}" alt="Card image cap" style="height: 25rem;">
+  <hr>
+  <div class="card-body" style="text-align:center; padding-top:0px">
+    <h5 class="card-title">{{this.name}}</h5>
+    <p class="card-text">{{this.price}} </p>
+    <a href="#" class="btn btn-primary">Add to cart</a>
+  </div>
+</div>
+{{/each}}
+</div>
+
